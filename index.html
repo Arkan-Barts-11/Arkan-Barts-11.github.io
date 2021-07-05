@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Arkan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="home">
+        <nav>
+            <div class="container">
+                <ul>
+                <li><a href="#home" class="target">Home</a></li>
+                <li><a href="#about" class="target">About</a></li>
+                <li><a href="#galeri" class="target">Gallery</a></li>
+                <li><a href="#kontak" class="target">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nama">
+            <div class="container-p">
+                <strong class="nama-p">Hello, I'm Arkan</strong>
+                <p>Begineer <strong class="p-satu">Web Developer </strong><span class="garis"> | </span><strong class="p-dua"> Illustrator</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="profil">
+            <p>About Me</p>
+            <div class="container">
+                <img src="img/arkan.jpg" alt="">
+            </div>
+        </div>
+        <div class="p-satu">
+            <p>My name is Arkan Abdila Barts, I live in Indonesia, I'm from multimedia graduate at a vocational school</p>
+            <img src="img/kamera.png" alt="" class="img-satu gbr-klik-satu">
+            <img src="img/flash.png" alt="" class="img-dua gambar-satu d-x">
+        </div>
+        <div class="p-dua">
+            <p>I'm interested in programming and design, I started to learn programming on YouTube and started to make simple web projects from what I have learned</p>
+            <img src="img/web-komp.png" alt="" class="img-satu gbr-klik-dua">
+            <img src="img/web-tulisan.png" alt="" class="img-dua gambar-dua d-x">
+        </div>
+        <div class="p-tiga">
+            <p>At first, I had a little difficulty to understanding the programming language, but I did it. <br>I will continue to learn programming until I really master it</p>
+            <img src="img/code.png" alt="" class="img-satu gbr-klik-tiga">
+            <img src="img/champ.png" alt="" class="img-dua gambar-tiga d-x">
+        </div>
+    </div>
+    <div class="galeri" id="galeri">
+        <div class="judul">
+            <p>My Gallery</p>
+            <img src="img/bg-kuning.jpg" alt="">
+        </div>
+        <div class="koleksi-gambar">
+            <img src="img/fierynight.jpeg" alt="" class="empat">
+            <img src="img/cyberpunk.jpeg" alt="" class="satu">
+            <img src="img/owlcat.jpeg" alt="" class="delapan">
+            <img src="img/ironman.jpeg" alt="" class="dua">
+            <img src="img/darkwitch.jpeg" alt="" class="tiga">
+            <img src="img/spiderman.jpeg" alt="" class="lima">
+            <img src="img/space.jpg" alt="" class="enam">
+            <img src="img/deadpool.png" alt="" class="tujuh">
+            <img src="img/street.jpg" alt="" class="sembilan">
+            <img src="img/kereta.jpg" alt="" class="sepuluh">
+            <img src="img/barong.jpeg" alt="" class="sebelas">
+            <img src="img/beerus.jpeg" alt="" class="dua-bel">
+        </div>
+    </div>
+    <div class="contact" id="kontak">
+        <div class="profil">
+            <p>Contact Me</p>
+            <img src="img/call.jpg" alt="">
+        </div>
+        <div class="tulis">
+            <form name="portfolio-contact-form">
+                <label for="nama">Name</label><input type="text" name="nama" id="nama">
+                <label for="email">Email</label><input type="email" name="email" id="">
+                <label for="pesan">Message</label><textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy 2021 Arkan Abdila Barts</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxldYhOdPZJmnfHR2kR3nDKkkT9C_rB1yoJ8RuQjaUUxGyxrQbYkkdfH4WxDgpymm8g/exec';
+        const form = document.forms['portfolio-contact-form']
+        const btn = document.querySelector('.btn');
+      
+        form.addEventListener('submit', e => {
+            btn.classList.toggle('samar');
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btn.classList.toggle('samar');
+                form.reset();
+                console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+$color1: white;
+$color2: rgb(45, 45, 45);
+$bg-color-1: rgb(45, 45, 45);
+$bg-color-2: lightgray;
+$bg-color-3: white;
+$nama-big: 3.5rem;
+$nama-small: 1.3rem;
+$nama-med: 2rem;
+$nav-size: 3.5rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.muncul {
+    animation: muncul 0.7s ease forwards;
+}
+.munculdua {
+    animation: munculdua 1s linear forwards;
+}
+.d-x {
+    opacity: 0;
+}
+.home {
+    height: 100vh;
+    max-width: 100vw;
+    background-image: linear-gradient(to top, $bg-color-1, $bg-color-2);
+    border-bottom: 3rem solid $bg-color-1;
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        .container {
+            min-height: $nav-size;
+            position: fixed;
+            width: 45%;
+            background-image: linear-gradient(to left, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            ul {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+                a {
+                    font-size: $nama-small;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                    color: $color1;
+                    transition: 0.2s;
+                }
+                a:hover {
+                    border-bottom: $color1 solid 0.2rem;
+                    padding-bottom: 0.4rem;
+                }
+            }
+        }
+    }
+    .nama {
+        height: calc(100vh - 3.5rem);
+        color: $color1;
+        .container-p {
+            width: 50%;    
+            position: relative;
+            top: 12rem;
+            left: 5rem;
+            box-sizing: border-box;
+            .nama-p {
+                font-size: $nama-big;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p {
+                font-size: $nama-small;
+                .p-satu {
+                    opacity: 0;
+                    animation: fade-in-nama 1s ease-in 1.5s forwards;
+                }
+                .garis {
+                    font-weight: bold;
+                    display: inline-block;
+                    position: relative;
+                    right: 7em;
+                    animation: seluncur 1s ease 0.5s forwards;
+                }
+                .p-dua {
+                    animation: fade-in-nama 1s ease-in 2.5s forwards;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+@keyframes fade-in-nama {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+@keyframes seluncur {
+    from {
+        position: relative;
+        right: 7em;
+    }
+    to {
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes muncul {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes munculdua {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $bg-color-1;
+    min-height: 100vh;
+    color: $color1;
+    font-size: $nama-small;
+    margin-bottom: auto;
+    .profil{
+        width: 25%;
+        margin-bottom: 5rem;
+        display: flex;
+        font-size: $nama-med;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        p {
+            padding-bottom: 0.7rem;
+            border-bottom: 0.3rem solid $color1
+        }
+        .container {
+            img {
+                border: 0.5rem double $bg-color-2;
+                border-radius: 50%;
+                margin-right: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+    .p-satu, .p-dua, .p-tiga {
+        position: relative;
+        height: 10rem;
+        box-sizing: border-box;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        p {
+            padding-bottom: 3rem;
+            border-bottom: 0.3rem solid $bg-color-2;
+        }
+    }
+    .p-satu {
+        width: 45%;
+        left: 5rem;
+        margin-bottom: 3rem;
+        .img-satu {
+            display: inline-block;
+            width: 7rem;
+        }
+        .img-dua {
+            display: inline-block;
+            width: 2rem;
+            position: relative;
+            right: 2.4rem;
+            top: -1.4rem;
+        }
+    }
+    .p-dua {
+        width: 55%;
+        left: calc(50% - 5rem);
+        margin-bottom: 3rem;
+        .img-satu {
+            display: inline-block;
+            width: 7rem;
+            margin-left: 1rem;
+        }
+        .img-dua {
+            display: inline-block;
+            width: 6.2rem;
+            position: relative;
+            right: 6.6rem;
+            top: -0.2rem;
+        }
+    }
+    .p-tiga {
+        width: 55%;
+        left: 5rem;
+        .img-satu {
+            display: block;
+            width: 7rem;
+        }
+        .img-dua {
+            display: block;
+            width: 4rem;
+            position: relative;
+            right: 5.3rem;
+            top: -1rem;
+        }
+    }
+}
+.galeri{
+    border-top: 4.5rem double $bg-color-1;
+    padding-top: 5rem;
+    background-color: $bg-color-2;
+    .judul {
+        width: 25%;
+        margin-bottom: 7rem;
+        display: flex;
+        font-size: $nama-med;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        p {
+            color: $color2;
+            padding-bottom: 0.7rem;
+            border-bottom: 0.3rem solid $color2;
+        }
+        img {
+            border: 0.5rem double $bg-color-1;
+            border-radius: 50%;
+            margin-right: 3rem;
+            width: 3rem;
+        }
+    }
+    .koleksi-gambar {
+        max-width: 85%;
+        position: relative;
+        max-height: 160rem;
+        margin: auto;
+        box-sizing: border-box;
+        img {
+            display: inline-block;
+            position: relative;
+            border: 0.7rem solid $bg-color-1;
+            transition: 0.3s;
+        }
+        img:hover {
+            width: 120%;
+            box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+            border: 0.7rem solid $bg-color-3;
+        }
+        .satu, .tiga, .tujuh {
+            max-width: 20rem;
+        }
+        .empat, .sembilan {
+            max-width: 30rem;
+        }
+        .enam, .sepuluh {
+            max-width: 30rem;
+        }
+        .delapan, .dua-bel, .sebelas {
+            max-width: 15rem;
+        }
+        .lima {
+            max-width: 20rem;
+            top: 6.8rem;
+            left: -3.6rem;
+        }
+        .dua {
+            max-width: 12rem;
+            left: 53.3rem;
+            top: -11rem;
+        }
+        .satu {
+            top: -13rem;
+        }
+        .empat {
+            top: 5rem;
+        }
+        .tiga {
+            right: 3.6rem;
+            top: 5rem;
+        }
+        .tujuh {
+            top: -43.7rem;
+        }
+        .sepuluh {
+            top: -52.1rem;
+        }
+        .sebelas {
+            top: -74.4rem;
+            left: 15rem;
+        }
+        .enam {
+            top: 11.7rem;
+        }
+        .sembilan {
+            left: 31.7rem;
+            top: -7.1rem;
+        }
+        .dua-bel {
+            top: -36.2rem;
+            right: 1.7rem;
+        }
+    }
+}
+.contact {
+    padding-top: 5rem;
+    background-image: linear-gradient(to top, $bg-color-1, $bg-color-2);
+    padding-bottom: 5rem;
+    .profil{
+        width: 25%;
+        margin-bottom: 5rem;
+        display: flex;
+        font-size: $nama-med;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        p {
+            color: $color1;
+            padding-bottom: 0.7rem;
+            border-bottom: 0.3rem solid $color1;
+        }
+        img {
+            border: 0.5rem double $bg-color-3;
+            border-radius: 50%;
+            margin-right: 3rem;
+            width: 3rem;
+        }
+    }
+    .tulis {
+        width: 50%;
+        margin: auto;
+        border: 0.7rem double $bg-color-3;
+        // border-radius: 2rem;
+        padding: 2rem;
+        label {
+            display: inline-block;
+            width: 10rem;
+            color: $color1;
+            font-size: $nama-small;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+        input, textarea {
+            max-width: 97%;
+            min-width: 97%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+            padding: 0.3rem;
+            border: none;
+            box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+        }
+        textarea {
+            min-height: 3rem;
+        }
+        button {
+            width: 5rem;
+            height: 2.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            color: $color1;
+            padding: 0.2rem;
+            border: none;
+            background-color: rgb(76, 76, 243);
+            border-radius: 0.3rem;
+            margin-top: 1rem;
+            box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+footer {
+    height: 3rem;
+    background-color: $bg-color-2;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    box-shadow: 0px -0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.samar {
+    opacity: 0.5;
+}

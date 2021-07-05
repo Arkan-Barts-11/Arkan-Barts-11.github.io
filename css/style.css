@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.muncul {
+  -webkit-animation: muncul 0.7s ease forwards;
+          animation: muncul 0.7s ease forwards;
+}
+
+.munculdua {
+  -webkit-animation: munculdua 1s linear forwards;
+          animation: munculdua 1s linear forwards;
+}
+
+.d-x {
+  opacity: 0;
+}
+
+.home {
+  height: 100vh;
+  max-width: 100vw;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2d2d2d), to(lightgray));
+  background-image: linear-gradient(to top, #2d2d2d, lightgray);
+  border-bottom: 3rem solid #2d2d2d;
+}
+
+.home nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.home nav .container {
+  min-height: 3.5rem;
+  position: fixed;
+  width: 45%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(55%, black), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to left, black 55%, rgba(0, 0, 0, 0));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.home nav .container ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.home nav .container ul a {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.home nav .container ul a:hover {
+  border-bottom: white solid 0.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.home .nama {
+  height: calc(100vh - 3.5rem);
+  color: white;
+}
+
+.home .nama .container-p {
+  width: 50%;
+  position: relative;
+  top: 12rem;
+  left: 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home .nama .container-p .nama-p {
+  font-size: 3.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home .nama .container-p p {
+  font-size: 1.3rem;
+}
+
+.home .nama .container-p p .p-satu {
+  opacity: 0;
+  -webkit-animation: fade-in-nama 1s ease-in 1.5s forwards;
+          animation: fade-in-nama 1s ease-in 1.5s forwards;
+}
+
+.home .nama .container-p p .garis {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  right: 7em;
+  -webkit-animation: seluncur 1s ease 0.5s forwards;
+          animation: seluncur 1s ease 0.5s forwards;
+}
+
+.home .nama .container-p p .p-dua {
+  -webkit-animation: fade-in-nama 1s ease-in 2.5s forwards;
+          animation: fade-in-nama 1s ease-in 2.5s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fade-in-nama {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-nama {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes seluncur {
+  from {
+    position: relative;
+    right: 7em;
+  }
+  to {
+    position: relative;
+    right: 0px;
+  }
+}
+
+@keyframes seluncur {
+  from {
+    position: relative;
+    right: 7em;
+  }
+  to {
+    position: relative;
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes munculdua {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes munculdua {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2d2d2d;
+  min-height: 100vh;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: auto;
+}
+
+.about .profil {
+  width: 25%;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .profil p {
+  padding-bottom: 0.7rem;
+  border-bottom: 0.3rem solid white;
+}
+
+.about .profil .container img {
+  border: 0.5rem double lightgray;
+  border-radius: 50%;
+  margin-right: 3rem;
+  width: 3rem;
+}
+
+.about .p-satu, .about .p-dua, .about .p-tiga {
+  position: relative;
+  height: 10rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .p-satu p, .about .p-dua p, .about .p-tiga p {
+  padding-bottom: 3rem;
+  border-bottom: 0.3rem solid lightgray;
+}
+
+.about .p-satu {
+  width: 45%;
+  left: 5rem;
+  margin-bottom: 3rem;
+}
+
+.about .p-satu .img-satu {
+  display: inline-block;
+  width: 7rem;
+}
+
+.about .p-satu .img-dua {
+  display: inline-block;
+  width: 2rem;
+  position: relative;
+  right: 2.4rem;
+  top: -1.4rem;
+}
+
+.about .p-dua {
+  width: 55%;
+  left: calc(50% - 5rem);
+  margin-bottom: 3rem;
+}
+
+.about .p-dua .img-satu {
+  display: inline-block;
+  width: 7rem;
+  margin-left: 1rem;
+}
+
+.about .p-dua .img-dua {
+  display: inline-block;
+  width: 6.2rem;
+  position: relative;
+  right: 6.6rem;
+  top: -0.2rem;
+}
+
+.about .p-tiga {
+  width: 55%;
+  left: 5rem;
+}
+
+.about .p-tiga .img-satu {
+  display: block;
+  width: 7rem;
+}
+
+.about .p-tiga .img-dua {
+  display: block;
+  width: 4rem;
+  position: relative;
+  right: 5.3rem;
+  top: -1rem;
+}
+
+.galeri {
+  border-top: 4.5rem double #2d2d2d;
+  padding-top: 5rem;
+  background-color: lightgray;
+}
+
+.galeri .judul {
+  width: 25%;
+  margin-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.galeri .judul p {
+  color: #2d2d2d;
+  padding-bottom: 0.7rem;
+  border-bottom: 0.3rem solid #2d2d2d;
+}
+
+.galeri .judul img {
+  border: 0.5rem double #2d2d2d;
+  border-radius: 50%;
+  margin-right: 3rem;
+  width: 3rem;
+}
+
+.galeri .koleksi-gambar {
+  max-width: 85%;
+  position: relative;
+  max-height: 160rem;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.galeri .koleksi-gambar img {
+  display: inline-block;
+  position: relative;
+  border: 0.7rem solid #2d2d2d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.galeri .koleksi-gambar img:hover {
+  width: 120%;
+  -webkit-box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+  border: 0.7rem solid white;
+}
+
+.galeri .koleksi-gambar .satu, .galeri .koleksi-gambar .tiga, .galeri .koleksi-gambar .tujuh {
+  max-width: 20rem;
+}
+
+.galeri .koleksi-gambar .empat, .galeri .koleksi-gambar .sembilan {
+  max-width: 30rem;
+}
+
+.galeri .koleksi-gambar .enam, .galeri .koleksi-gambar .sepuluh {
+  max-width: 30rem;
+}
+
+.galeri .koleksi-gambar .delapan, .galeri .koleksi-gambar .dua-bel, .galeri .koleksi-gambar .sebelas {
+  max-width: 15rem;
+}
+
+.galeri .koleksi-gambar .lima {
+  max-width: 20rem;
+  top: 6.8rem;
+  left: -3.6rem;
+}
+
+.galeri .koleksi-gambar .dua {
+  max-width: 12rem;
+  left: 53.3rem;
+  top: -11rem;
+}
+
+.galeri .koleksi-gambar .satu {
+  top: -13rem;
+}
+
+.galeri .koleksi-gambar .empat {
+  top: 5rem;
+}
+
+.galeri .koleksi-gambar .tiga {
+  right: 3.6rem;
+  top: 5rem;
+}
+
+.galeri .koleksi-gambar .tujuh {
+  top: -43.7rem;
+}
+
+.galeri .koleksi-gambar .sepuluh {
+  top: -52.1rem;
+}
+
+.galeri .koleksi-gambar .sebelas {
+  top: -74.4rem;
+  left: 15rem;
+}
+
+.galeri .koleksi-gambar .enam {
+  top: 11.7rem;
+}
+
+.galeri .koleksi-gambar .sembilan {
+  left: 31.7rem;
+  top: -7.1rem;
+}
+
+.galeri .koleksi-gambar .dua-bel {
+  top: -36.2rem;
+  right: 1.7rem;
+}
+
+.contact {
+  padding-top: 5rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2d2d2d), to(lightgray));
+  background-image: linear-gradient(to top, #2d2d2d, lightgray);
+  padding-bottom: 5rem;
+}
+
+.contact .profil {
+  width: 25%;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .profil p {
+  color: white;
+  padding-bottom: 0.7rem;
+  border-bottom: 0.3rem solid white;
+}
+
+.contact .profil img {
+  border: 0.5rem double white;
+  border-radius: 50%;
+  margin-right: 3rem;
+  width: 3rem;
+}
+
+.contact .tulis {
+  width: 50%;
+  margin: auto;
+  border: 0.7rem double white;
+  padding: 2rem;
+}
+
+.contact .tulis label {
+  display: inline-block;
+  width: 10rem;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.contact .tulis input, .contact .tulis textarea {
+  max-width: 97%;
+  min-width: 97%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  border: none;
+  -webkit-box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.contact .tulis textarea {
+  min-height: 3rem;
+}
+
+.contact .tulis button {
+  width: 5rem;
+  height: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  color: white;
+  padding: 0.2rem;
+  border: none;
+  background-color: #4c4cf3;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  height: 3rem;
+  background-color: lightgray;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  -webkit-box-shadow: 0px -0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0px -0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.samar {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
